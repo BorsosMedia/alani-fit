@@ -16,6 +16,8 @@ module.exports = {
       },
       backgroundImage: {
         "hero-bg-desktop": 'url("/assets/home.png")',
+        "radial-gradient":
+          "radial-gradient(circle at 65% 30%, #fff, #ffcfea, #ff61ad);",
       },
     },
   },

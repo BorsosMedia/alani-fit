@@ -4,8 +4,8 @@ const OneTimeCards = ({ plan, duration, bullets, price, to }) => {
   return (
     <div>
       <div>
-        <h4>{plan}</h4>
-        <h5>{duration} Plan</h5>
+        <h4 className="uppercase">{plan}</h4>
+        <h5 className="uppercase">{duration} Plan</h5>
       </div>
       <ul>
         {bullets?.map((bullet, index) => (

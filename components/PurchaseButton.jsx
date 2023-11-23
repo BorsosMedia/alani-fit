@@ -1,8 +1,12 @@
-const PurchaseButton = ({ to }) => {
+import Link from "next/link";
+
+const PurchaseButton = ({ to, color = "text-white" }) => {
   return (
-    <a href={to} rel="noopener noreferrer">
-      <button>Purchase</button>
-    </a>
+    <Link href={to}>
+      <button className="blue-rectangle">
+        <span className={`unskew uppercase ${color}`}>Purchase</span>
+      </button>
+    </Link>
   );
 };
 

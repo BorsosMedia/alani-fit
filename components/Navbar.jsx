@@ -3,15 +3,13 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header>
+    <nav className="navbar">
       <Image src={""} alt="logo" />
-      <nav>
-        <Link href="#">Coaching Plans</Link>
-        <Link href="#">One Time Plans</Link>
-        <Link href="#">About Me</Link>
-        <Link href="#">Clients&apos; Reviews</Link>
-      </nav>
-    </header>
+      <Link href="#coaching">Coaching Plans</Link>
+      <Link href="#one- time">One Time Plans</Link>
+      <Link href="#">About Me</Link>
+      <Link href="#">Clients&apos; Reviews</Link>
+    </nav>
   );
 };
 

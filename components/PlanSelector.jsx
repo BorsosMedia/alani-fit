@@ -57,7 +57,7 @@ const PlanSelector = () => {
       </fieldset>
       {plan === "monthly" ? (
         <CoachingCards
-          plan="Monthly"
+          plan="monthly"
           bullets={[
             "SMS & Email Check-Ins",
             "Personalized Training",
@@ -96,7 +96,7 @@ const PlanSelector = () => {
         />
       ) : (
         <CoachingCards
-          plan="Annual"
+          plan="annual"
           bullets={[
             "SMS & Email Check-Ins",
             "Personalized Training",
