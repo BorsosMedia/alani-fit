@@ -8,13 +8,28 @@
 }
 
 @font-face {
-  src: url("../public/fonts/amenti-regular.otf") format(opentype);
-  font-family: "Amenti Regular";
+  src: url("../public/fonts/amenti-light.ttf") format(truetype);
+  font-family: "Amenti Light";
 }
 
 @font-face {
-  src: url("../public/fonts/amenti-medium.otf") format(opentype);
+  src: url("../public/fonts/amenti-vf.ttf") format(truetype);
+  font-family: "Amenti VF";
+}
+
+@font-face {
+  src: url("../public/fonts/amenti-medium.ttf") format(truetype);
   font-family: "Amenti Medium";
+}
+
+@font-face {
+  src: url("../public/fonts/amenti-bold.ttf") format(truetype);
+  font-family: "Amenti Bold";
+}
+
+@font-face {
+  src: url("../public/fonts/amenti-black.ttf") format(truetype);
+  font-family: "Amenti Black";
 }
 
 @layer utilities {
@@ -24,7 +39,7 @@
 
   body {
     @apply m-0 h-full w-full overflow-x-hidden bg-dark-blue p-0 text-text-pink;
-    font-family: "Amenti Regular", Arial, Helvetica, sans-serif;
+    font-family: "Amenti VF", Arial, Helvetica, sans-serif;
   }
 
   label {

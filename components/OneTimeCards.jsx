@@ -2,7 +2,7 @@ import PurchaseButton from "./PurchaseButton";
 
 const OneTimeCards = ({ plan, duration, bullets, price, to }) => {
   return (
-    <div>
+    <div className="">
       <div>
         <h4 className="uppercase">{plan}</h4>
         <h5 className="uppercase">{duration} Plan</h5>
