@@ -122,4 +122,8 @@
   .social-icon-footer {
     @apply h-6 w-auto clickable;
   }
+
+  .slick-slide-img {
+    @apply box-border px-2;
+  }
 }
