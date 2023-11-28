@@ -51,12 +51,24 @@
     font-family: "Dragna", Arial, Helvetica, sans-serif;
   }
 
+  .amenti-light {
+    font-family: "Amenti Light", Arial, Helvetica, sans-serif;
+  }
+
   .amenti-medium {
     font-family: "Amenti Medium", Arial, Helvetica, sans-serif;
   }
 
+  .amenti-bold {
+    font-family: "Amenti Bold", Arial, Helvetica, sans-serif;
+  }
+
+  .amenti-black {
+    font-family: "Amenti Black", Arial, Helvetica, sans-serif;
+  }
+
   .flex-col-center {
-    @apply flex flex-col items-center justify-center gap-8;
+    @apply flex flex-col items-center justify-center;
   }
 
   .flex-row-center {
@@ -103,7 +115,11 @@
     @apply h-1 w-full rounded bg-dark-pink;
   }
 
+  .clickable {
+    @apply cursor-pointer transition-all duration-300 ease-in-out hover:scale-110;
+  }
+
   .social-icon-footer {
-    @apply h-6 w-auto cursor-pointer transition-all duration-300 ease-in-out hover:scale-110;
+    @apply h-6 w-auto clickable;
   }
 }

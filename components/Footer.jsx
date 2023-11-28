@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
         <div className="footer-separator" />
       </section>
-      <section>
+      <section className="flex-col-center gap-4">
         <Link href="#" target="_blank" className="underline">
           Legal and Privacy Policy
         </Link>
