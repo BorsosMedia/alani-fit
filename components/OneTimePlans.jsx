@@ -2,14 +2,60 @@ import OneTimeCards from "./OneTimeCards";
 
 const OneTimePlans = () => {
   return (
-    <article id="one-time">
-      <h2 className="w-full bg-light-blue text-center text-2xl uppercase text-light-pink">
-        One Time Plans
+    <article id="one-time" className="py-8">
+      <h2 className="dragna skew mx-[10%] w-[80%] bg-light-blue py-2 text-center text-5xl uppercase text-light-pink">
+        <span className="unskew">One Time Plans</span>
       </h2>
-      <OneTimeCards to="#" />
-      <OneTimeCards to="#" />
-      <OneTimeCards to="#" />
-      <OneTimeCards to="#" />
+      <section className="flex-col-center gap-4 py-8">
+        <OneTimeCards
+          to="#"
+          plan="Lorem ipsum"
+          duration="3 month"
+          price="499"
+          bullets={[
+            "Customized Nutrition",
+            "Strength Training",
+            "Progressive Overload",
+            "Rest and Recovery",
+          ]}
+        />
+        <OneTimeCards
+          to="#"
+          plan="Lorem ipsum"
+          duration="3 month"
+          price="499"
+          bullets={[
+            "Customized Nutrition",
+            "Strength Training",
+            "Progressive Overload",
+            "Rest and Recovery",
+          ]}
+        />
+        <OneTimeCards
+          to="#"
+          plan="Lorem ipsum"
+          duration="3 month"
+          price="499"
+          bullets={[
+            "Customized Nutrition",
+            "Strength Training",
+            "Progressive Overload",
+            "Rest and Recovery",
+          ]}
+        />
+        <OneTimeCards
+          to="#"
+          plan="Lorem ipsum"
+          duration="6 week"
+          price="499"
+          bullets={[
+            "Customized Nutrition",
+            "Strength Training",
+            "Progressive Overload",
+            "Rest and Recovery",
+          ]}
+        />
+      </section>
     </article>
   );
 };

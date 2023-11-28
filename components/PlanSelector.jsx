@@ -12,47 +12,71 @@ const PlanSelector = () => {
   };
 
   return (
-    <section>
-      <fieldset>
-        <label htmlFor="monthly" onClick={handleChange}>
+    <section className="flex-col-center mx-[10%] w-[80%]">
+      <fieldset className="flex-row-center gap-8 pb-8">
+        <input
+          type="radio"
+          value="monthly"
+          id="monthly"
+          name="plans"
+          className="hidden"
+        />
+        <label
+          htmlFor="monthly"
+          onClick={handleChange}
+          className={`plan ${
+            plan === "monthly" ? "selected-plan" : "unselected-plan"
+          }`}
+        >
           Monthly
-          <input
-            type="radio"
-            value="monthly"
-            id="monthly"
-            name="plans"
-            className="hidden"
-          />
         </label>
-        <label htmlFor="3-months" onClick={handleChange}>
+        <input
+          type="radio"
+          value="3-months"
+          id="3-months"
+          name="plans"
+          className="hidden"
+        />
+        <label
+          htmlFor="3-months"
+          onClick={handleChange}
+          className={`plan ${
+            plan === "3-months" ? "selected-plan" : "unselected-plan"
+          }`}
+        >
           3 Months
-          <input
-            type="radio"
-            value="3-months"
-            id="3-months"
-            name="plans"
-            className="hidden"
-          />
         </label>
-        <label htmlFor="6-months" onClick={handleChange}>
+        <input
+          type="radio"
+          value="6-months"
+          id="6-months"
+          name="plans"
+          className="hidden"
+        />
+        <label
+          htmlFor="6-months"
+          onClick={handleChange}
+          className={`plan ${
+            plan === "6-months" ? "selected-plan" : "unselected-plan"
+          }`}
+        >
           6 Months
-          <input
-            type="radio"
-            value="6-months"
-            id="6-months"
-            name="plans"
-            className="hidden"
-          />
         </label>
-        <label htmlFor="annual" onClick={handleChange}>
+        <input
+          type="radio"
+          value="annual"
+          id="annual"
+          name="plans"
+          className="hidden"
+        />
+        <label
+          htmlFor="annual"
+          onClick={handleChange}
+          className={`plan ${
+            plan === "annual" ? "selected-plan" : "unselected-plan"
+          }`}
+        >
           Annual
-          <input
-            type="radio"
-            value="annual"
-            id="annual"
-            name="plans"
-            className="hidden"
-          />
         </label>
       </fieldset>
       {plan === "monthly" ? (
