@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import WhiteButton from "./WhiteButton";
 import discord from "../public/assets/discord.png";
 
 const DiscordSection = () => {
@@ -16,11 +17,7 @@ const DiscordSection = () => {
             eiusmod tempor incididunt ut labore et dolore magna.
           </p>
           <a href="#" target="_blank" rel="noopener noreferrer nofollow">
-            <button className="skew clickable bg-white">
-              <span className="unskew amenti-black px-8 py-1 text-xl uppercase text-dark-pink">
-                Join Now
-              </span>
-            </button>
+            <WhiteButton text="Join Now" />
           </a>
         </section>
       </section>

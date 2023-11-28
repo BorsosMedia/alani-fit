@@ -108,7 +108,7 @@
   }
 
   .footer {
-    @apply px-[10vw] flex-col-center w-full gap-8 bg-lighter-pink py-8 text-center text-dark-blue;
+    @apply px-[10vw] flex-col-center w-full gap-8 bg-lighter-pink py-8 text-center text-light-blue;
   }
 
   .footer-separator {

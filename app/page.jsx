@@ -1,5 +1,6 @@
 import BurgerMenu from "../components/BurgerMenu";
 import CoachingPlans from "../components/CoachingPlans";
+import Consultation from "../components/Consultation";
 import DiscordSection from "../components/DiscordSection";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <CoachingPlans />
       <OneTimePlans />
+      <Consultation />
       <Progress />
       <DiscordSection />
       <InstagramWidget />
