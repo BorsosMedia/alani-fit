@@ -20,6 +20,8 @@ module.exports = {
       },
       backgroundImage: {
         "hero-bg-desktop": 'url("/assets/home.png")',
+        "inquiry-bg-desktop": 'url("/assets/inquiry-bg.png")',
+        "bloodwork-bg-desktop": 'url("/assets/bloodwork.png")',
         "radial-gradient":
           "radial-gradient(circle at 65% 30%, #fff, #ffcfea, #ff61ad);",
       },

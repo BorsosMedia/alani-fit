@@ -5,7 +5,7 @@ import discord from "../public/assets/discord.png";
 
 const DiscordSection = () => {
   return (
-    <article className="skew mx-[20%] w-[60%] border-3 border-white bg-gradient-to-r from-lighter-pink to-dark-pink p-4 text-center text-light-blue">
+    <article className="skew mx-[20%] w-[60%] max-w-[1080px] border-3 border-white bg-gradient-to-r from-lighter-pink to-dark-pink p-4 text-center text-light-blue">
       <section className="grid skew-x-[20deg] grid-cols-7 place-items-center gap-4">
         <Image src={discord} alt="Discord Icon" className="h-auto w-20" />
         <h2 className="dragna col-span-2 inline-block text-3xl">

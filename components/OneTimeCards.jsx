@@ -2,7 +2,7 @@ import PurchaseButton from "./PurchaseButton";
 
 const OneTimeCards = ({ plan, duration, bullets, price, to }) => {
   return (
-    <div className="mx-[10%] grid w-[80%] grid-cols-3 place-items-center border-3 border-white bg-lighter-pink py-4 text-center text-dark-pink">
+    <div className="mx-[10%] grid w-[80%] max-w-[1080px] grid-cols-3 place-items-center border-3 border-white bg-lighter-pink py-4 text-center text-dark-pink">
       <div>
         <h4 className="dragna text-4xl">{plan}</h4>
         <h5 className="amenti-bold text-2xl uppercase tracking-widest">

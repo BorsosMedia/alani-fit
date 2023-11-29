@@ -112,11 +112,11 @@
   }
 
   .bg-coaching-card {
-    @apply w-[320px] h-[320px] bg-radial-gradient rounded-3xl relative;
+    @apply w-[320px] h-[400px] bg-radial-gradient rounded-3xl relative;
   }
 
   .coaching-card {
-    @apply flex flex-col items-center justify-between m-[5%] h-[90%] w-[90%] text-dark-blue border border-white rounded-3xl absolute;
+    @apply flex flex-col items-center justify-between m-[5%] py-[5%] h-[90%] w-[90%] text-light-blue border border-white rounded-3xl absolute;
   }
 
   .footer {

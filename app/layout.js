@@ -10,7 +10,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
+        <script async src="https://link.msgsndr.com/js/form_embed.js" />
         <script
+          async
           src="https://static.elfsight.com/platform/platform.js"
           data-use-service-core
           defer
