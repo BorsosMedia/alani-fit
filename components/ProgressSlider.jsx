@@ -53,7 +53,10 @@ const ProgressSlider = () => {
   };
 
   return (
-    <Slider {...settings} className="mx-[10%] w-[80%]">
+    <Slider
+      {...settings}
+      className="mx-[10%] w-[80%] max-w-[1080px] lg:mx-auto"
+    >
       <div>
         <Image src={testimonial1} alt="slide 1" className="slick-slide-img" />
       </div>

@@ -4,10 +4,14 @@ import alani from "../public/assets/inquiry.png";
 
 const InquirySection = () => {
   return (
-    <article className="bg-inquiry-bg-desktop bg-cover bg-no-repeat">
-      <div className="mx-[10%] grid w-[80%] grid-cols-1 py-8 text-center text-white md:grid-cols-2">
-        <Image src={alani} alt="Alani" className="place-self-center p-4" />
-        <section className="">
+    <article className="grid grid-cols-1 place-content-center bg-inquiry-bg-desktop bg-cover bg-no-repeat 2xl:h-0 2xl:py-[28.30769230769231%]">
+      <div className="mx-[10%] grid w-[80%] grid-cols-1 py-8 text-center text-white md:grid-cols-5">
+        <Image
+          src={alani}
+          alt="Alani"
+          className="col-span-2 place-self-center p-4"
+        />
+        <section className="col-span-3">
           <h2 className="dragna mb-4 text-5xl">
             Unlock your
             <br />
