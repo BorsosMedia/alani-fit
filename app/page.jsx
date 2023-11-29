@@ -1,3 +1,4 @@
+import About from "../components/About";
 import Bloodwork from "../components/Bloodwork";
 import BurgerMenu from "../components/BurgerMenu";
 import CoachingPlans from "../components/CoachingPlans";
@@ -20,6 +21,7 @@ export default function Home() {
       <Bloodwork />
       <InquirySection />
       <Consultation />
+      <About />
       <Progress />
       <DiscordSection />
       <InstagramWidget />

@@ -24,6 +24,8 @@ module.exports = {
         "bloodwork-bg-desktop": 'url("/assets/bloodwork.png")',
         "radial-gradient":
           "radial-gradient(circle at 65% 30%, #fff, #ffcfea, #ff61ad);",
+        "radial-gradient-blue":
+          "radial-gradient(circle at 50% 50%, #fff, #fff, #1E4878);",
       },
     },
   },

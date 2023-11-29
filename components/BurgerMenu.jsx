@@ -49,8 +49,8 @@ const BurgerMenu = () => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#reviews" className="text-white">
-              Clients&apos; Reviews
+            <Link href="#progress" className="text-white">
+              Clients&apos; Progress
             </Link>
           </NavbarItem>
         </NavbarContent>
