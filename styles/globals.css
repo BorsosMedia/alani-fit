@@ -204,7 +204,7 @@
   /* VARIOOOOOOOOS */
 
   .footer {
-    @apply px-[10vw] flex-col-center w-full gap-8 bg-lighter-pink py-8 text-center text-light-blue;
+    @apply px-[10vw] flex-col-center w-full gap-8 bg-lighter-pink py-8 text-center text-light-blue 2xl:text-2xl;
   }
 
   .footer-separator {
@@ -228,6 +228,14 @@
   }
 
   .navbar {
-    @apply fixed md:absolute left-0 top-0 flex w-full items-center justify-around bg-black/60 text-white;
+    @apply fixed md:absolute left-0 top-0 flex w-full items-center justify-around bg-black/60 text-white 2xl:py-4;
+  }
+
+  .nav-item {
+    @apply w-full text-white 2xl:text-2xl;
+  }
+
+  .logo {
+    @apply h-auto w-24 md:w-32 2xl:w-40;
   }
 }

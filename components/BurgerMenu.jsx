@@ -22,40 +22,44 @@ const BurgerMenu = () => {
 
   return (
     <NextUIProvider>
-      <Navbar onMenuOpenChange={setIsMenuOpen} className="navbar">
+      <Navbar
+        onMenuOpenChange={setIsMenuOpen}
+        className="navbar"
+        maxWidth="full"
+      >
         <NavbarContent
-          className="hidden w-full justify-between gap-4 sm:flex"
-          justify="between"
+          className="hidden w-full justify-evenly gap-4 sm:flex"
+          justify="evenly"
         >
           <NavbarItem>
             <NavbarBrand>
-              <Image src={logo} alt="logo" className="h-auto w-24" />
+              <Image src={logo} alt="logo" className="logo" />
             </NavbarBrand>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#coaching" className="text-white">
+            <Link href="#coaching" className="nav-item">
               Coaching Plans
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#one-time" className="text-white">
+            <Link href="#one-time" className="nav-item">
               One Time Plans
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#contest-prep" className="text-white">
+            <Link href="#contest-prep" className="nav-item">
               Contest Prep Plans
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link href="#about" className="text-white">
+            <Link href="#about" className="nav-item">
               About Me
             </Link>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent>
           <NavbarBrand>
-            <Image src={logo} alt="logo" className="h-auto w-24" />
+            <Image src={logo} alt="logo" className="logo" />
           </NavbarBrand>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -64,22 +68,22 @@ const BurgerMenu = () => {
         </NavbarContent>
         <NavbarMenu className="bg-black/60">
           <NavbarMenuItem>
-            <Link href="#coaching" className="w-full text-white" size="lg">
+            <Link href="#coaching" className="nav-item" size="lg">
               Coaching Plans
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="#one-time" className="w-full text-white" size="lg">
+            <Link href="#one-time" className="nav-item" size="lg">
               One Time Plans
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="#contest-prep" className="w-full text-white" size="lg">
+            <Link href="#contest-prep" className="nav-item" size="lg">
               Contest Prep Plans
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="#about" className="w-full text-white" size="lg">
+            <Link href="#about" className="nav-item" size="lg">
               About Me
             </Link>
           </NavbarMenuItem>
