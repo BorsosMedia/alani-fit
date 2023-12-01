@@ -9,7 +9,7 @@ const InquirySection = () => {
         <Image
           src={alani}
           alt="Alani"
-          className="col-span-2 place-self-center p-4"
+          className="col-span-2 hidden place-self-center p-4 md:block"
         />
         <section className="col-span-3">
           <h2 className="dragna mb-4 text-5xl">

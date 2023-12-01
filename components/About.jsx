@@ -28,7 +28,7 @@ const About = () => {
           </h2>
           <section className="flex-row-center">
             <Image src={alani3} alt="Alani" className="h-auto w-80" />
-            <div className="relative -left-16 h-[420px] w-[320px] rounded-3xl bg-radial-gradient-blue text-light-blue">
+            <div className="relative -left-16 h-[420px] w-[320px] rounded-3xl bg-blue-gradient text-light-blue">
               <div className="absolute m-[5%] flex h-[90%] w-[90%] flex-col items-center justify-between py-[5%]">
                 <h3 className="amenti-bold pb-4 text-3xl uppercase">
                   Lorem ipsum dolor sit amet

@@ -5,6 +5,7 @@ import { useState } from "react";
 import CoachingCards from "./CoachingCards";
 
 const PlanSelector = () => {
+  const planTypes = ["monthly", "3 months", "6 months", "annual"];
   const [plan, setPlan] = useState("monthly");
 
   const handleChange = (e) => {
@@ -12,125 +13,91 @@ const PlanSelector = () => {
   };
 
   return (
-    <section className="flex-col-center mx-[10%] w-[80%]">
-      <fieldset className="flex-row-center gap-8 pb-8">
-        <input
-          type="radio"
-          value="monthly"
-          id="monthly"
-          name="plans"
-          className="hidden"
-        />
-        <label
-          htmlFor="monthly"
-          onClick={handleChange}
-          className={`plan ${
-            plan === "monthly" ? "selected-plan" : "unselected-plan"
-          }`}
-        >
-          Monthly
-        </label>
-        <input
-          type="radio"
-          value="3-months"
-          id="3-months"
-          name="plans"
-          className="hidden"
-        />
-        <label
-          htmlFor="3-months"
-          onClick={handleChange}
-          className={`plan ${
-            plan === "3-months" ? "selected-plan" : "unselected-plan"
-          }`}
-        >
-          3 Months
-        </label>
-        <input
-          type="radio"
-          value="6-months"
-          id="6-months"
-          name="plans"
-          className="hidden"
-        />
-        <label
-          htmlFor="6-months"
-          onClick={handleChange}
-          className={`plan ${
-            plan === "6-months" ? "selected-plan" : "unselected-plan"
-          }`}
-        >
-          6 Months
-        </label>
-        <input
-          type="radio"
-          value="annual"
-          id="annual"
-          name="plans"
-          className="hidden"
-        />
-        <label
-          htmlFor="annual"
-          onClick={handleChange}
-          className={`plan ${
-            plan === "annual" ? "selected-plan" : "unselected-plan"
-          }`}
-        >
-          Annual
-        </label>
+    <section className="plan-display">
+      <fieldset>
+        {planTypes.map((planType, index) => (
+          <div key={index}>
+            <input
+              type="radio"
+              value={planType}
+              id={planType}
+              name="plans"
+              className="hidden"
+            />
+            <label
+              htmlFor={planType}
+              onClick={handleChange}
+              className={
+                plan === planType ? "selected-plan" : "unselected-plan"
+              }
+            >
+              {planType}
+            </label>
+          </div>
+        ))}
       </fieldset>
       {plan === "monthly" ? (
-        <CoachingCards
-          plan="monthly"
-          bullets={[
-            "SMS & Email Check-Ins",
-            "Personalized Training",
-            "Nutrition and Rehab",
-            "Lifestyle Advice",
-            "Includes Initial Consultation",
-          ]}
-          price="249"
-          to="#"
-        />
-      ) : plan === "3-months" ? (
-        <CoachingCards
-          plan="3 months"
-          bullets={[
-            "SMS & Email Check-Ins",
-            "Personalized Training",
-            "Nutrition and Rehab",
-            "Lifestyle Advice",
-            "Includes Initial Consultation",
-          ]}
-          price="249"
-          to="#"
-        />
-      ) : plan === "6-months" ? (
-        <CoachingCards
-          plan="6 months"
-          bullets={[
-            "SMS & Email Check-Ins",
-            "Personalized Training",
-            "Nutrition and Rehab",
-            "Lifestyle Advice",
-            "Includes Initial Consultation",
-          ]}
-          price="249"
-          to="#"
-        />
+        <div className="coaching-cards-display">
+          <CoachingCards tier="bottom" plan="monthly" price="149" to="#" />
+          <CoachingCards tier="upper" plan="monthly" price="249" to="#" />
+        </div>
+      ) : plan === "3 months" ? (
+        <div className="coaching-cards-display">
+          <CoachingCards
+            tier="bottom"
+            plan="3 months"
+            price="402.3"
+            to="#"
+            discount="10"
+            before="447"
+          />
+          <CoachingCards
+            tier="upper"
+            plan="3 months"
+            price="672.3"
+            to="#"
+            discount="10"
+            before="747"
+          />
+        </div>
+      ) : plan === "6 months" ? (
+        <div className="coaching-cards-display">
+          <CoachingCards
+            tier="bottom"
+            plan="6 months"
+            price="715.2"
+            to="#"
+            discount="20"
+            before="894"
+          />
+          <CoachingCards
+            tier="upper"
+            plan="6 months"
+            price="1195.2"
+            to="#"
+            discount="20"
+            before="1494"
+          />
+        </div>
       ) : (
-        <CoachingCards
-          plan="annual"
-          bullets={[
-            "SMS & Email Check-Ins",
-            "Personalized Training",
-            "Nutrition and Rehab",
-            "Lifestyle Advice",
-            "Includes Initial Consultation",
-          ]}
-          price="249"
-          to="#"
-        />
+        <div className="coaching-cards-display">
+          <CoachingCards
+            tier="bottom"
+            plan="annual"
+            price="1251.6"
+            to="#"
+            discount="30"
+            before="1788"
+          />
+          <CoachingCards
+            tier="upper"
+            plan="annual"
+            price="2091.6"
+            to="#"
+            discount="30"
+            before="2988"
+          />
+        </div>
       )}
     </section>
   );

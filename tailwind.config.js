@@ -20,12 +20,13 @@ module.exports = {
       },
       backgroundImage: {
         "hero-bg-desktop": 'url("/assets/home.png")',
+        "hero-bg-mobile": 'url("/assets/home-mobile.png")',
         "inquiry-bg-desktop": 'url("/assets/inquiry-bg.png")',
         "bloodwork-bg-desktop": 'url("/assets/bloodwork.png")',
-        "radial-gradient":
-          "radial-gradient(circle at 65% 30%, #fff, #ffcfea, #ff61ad);",
-        "radial-gradient-blue":
-          "radial-gradient(circle at 50% 50%, #fff, #fff, #1E4878);",
+        "pink-gradient":
+          "radial-gradient(circle at 40% 60%, #ff61ad, #ff61ad, #ffcfea);",
+        "blue-gradient":
+          "radial-gradient(circle at 50% 50%, #fff, #f5f5f5, #1E4878);",
       },
     },
   },

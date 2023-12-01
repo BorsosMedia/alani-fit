@@ -23,16 +23,15 @@ const BurgerMenu = () => {
   return (
     <NextUIProvider>
       <Navbar onMenuOpenChange={setIsMenuOpen} className="navbar">
-        <NavbarContent>
-          <NavbarMenuToggle
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden"
-          />
-          <NavbarBrand>
-            <Image src={logo} alt="logo" className="h-auto w-24" />
-          </NavbarBrand>
-        </NavbarContent>
-        <NavbarContent className="hidden gap-4 sm:flex" justify="center">
+        <NavbarContent
+          className="hidden w-full justify-between gap-4 sm:flex"
+          justify="between"
+        >
+          <NavbarItem>
+            <NavbarBrand>
+              <Image src={logo} alt="logo" className="h-auto w-24" />
+            </NavbarBrand>
+          </NavbarItem>
           <NavbarItem>
             <Link href="#coaching" className="text-white">
               Coaching Plans
@@ -44,17 +43,25 @@ const BurgerMenu = () => {
             </Link>
           </NavbarItem>
           <NavbarItem>
+            <Link href="#contest-prep" className="text-white">
+              Contest Prep Plans
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
             <Link href="#about" className="text-white">
               About Me
             </Link>
           </NavbarItem>
-          <NavbarItem>
-            <Link href="#progress" className="text-white">
-              Clients&apos; Progress
-            </Link>
-          </NavbarItem>
         </NavbarContent>
-
+        <NavbarContent>
+          <NavbarBrand>
+            <Image src={logo} alt="logo" className="h-auto w-24" />
+          </NavbarBrand>
+          <NavbarMenuToggle
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            className="sm:hidden"
+          />
+        </NavbarContent>
         <NavbarMenu className="bg-black/60">
           <NavbarMenuItem>
             <Link href="#coaching" className="w-full text-white" size="lg">
@@ -67,13 +74,13 @@ const BurgerMenu = () => {
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="#about" className="w-full text-white" size="lg">
-              About Me
+            <Link href="#contest-prep" className="w-full text-white" size="lg">
+              Contest Prep Plans
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="#reviews" className="w-full text-white" size="lg">
-              Clients&apos; Reviews
+            <Link href="#about" className="w-full text-white" size="lg">
+              About Me
             </Link>
           </NavbarMenuItem>
         </NavbarMenu>

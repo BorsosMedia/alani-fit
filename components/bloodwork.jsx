@@ -2,7 +2,7 @@ import PurchaseButton from "./PurchaseButton";
 
 const Bloodwork = () => {
   return (
-    <article className="grid grid-cols-1 place-content-center bg-bloodwork-bg-desktop bg-cover bg-no-repeat px-[10vw] md:grid-cols-2 md:px-0 md:pl-[10%] xl:h-0 xl:py-[20.546875%]">
+    <article className="bg-bloodwork">
       <section className="py-8 text-center text-light-blue md:text-left">
         <h2 className="dragna text-5xl xl:text-7xl">
           Lorem ipsum

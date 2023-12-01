@@ -2,57 +2,39 @@ import OneTimeCards from "./OneTimeCards";
 
 const OneTimePlans = () => {
   return (
-    <article id="one-time" className="py-8">
-      <h2 className="dragna skew mx-[10%] w-[80%] bg-light-blue py-2 text-center text-5xl text-light-pink">
+    <article id="one-time" className="plan-display">
+      <h2 className="plan-type-headline blue-bg_pink-text">
         <span className="unskew">One Time Plans</span>
       </h2>
-      <section className="flex-col-center gap-4 py-8">
+      <section className="cards-display-col">
         <OneTimeCards
           to="#"
-          plan="Lorem ipsum"
-          duration="3 month"
-          price="499"
+          plan="Fit & Lean"
           bullets={[
-            "Customized Nutrition",
+            "Personalized Nutrition",
             "Strength Training",
-            "Progressive Overload",
-            "Rest and Recovery",
+            "Supplementation Advice",
+            "Progress Tracking",
           ]}
         />
         <OneTimeCards
           to="#"
-          plan="Lorem ipsum"
-          duration="3 month"
-          price="499"
+          plan="Weight Loss"
           bullets={[
-            "Customized Nutrition",
-            "Strength Training",
-            "Progressive Overload",
-            "Rest and Recovery",
+            "Customized Meal Plan",
+            "Targeted Workouts",
+            "Daily Habit Transformation",
+            "Progress Monitoring",
           ]}
         />
         <OneTimeCards
           to="#"
-          plan="Lorem ipsum"
-          duration="3 month"
-          price="499"
+          plan="Body Revive"
           bullets={[
-            "Customized Nutrition",
-            "Strength Training",
-            "Progressive Overload",
-            "Rest and Recovery",
-          ]}
-        />
-        <OneTimeCards
-          to="#"
-          plan="Lorem ipsum"
-          duration="6 week"
-          price="499"
-          bullets={[
-            "Customized Nutrition",
-            "Strength Training",
-            "Progressive Overload",
-            "Rest and Recovery",
+            "Strength and Cardio Training",
+            "Nutrition Strategies",
+            "Lifestyle Optimization",
+            "Metabolic Conditioning",
           ]}
         />
       </section>

@@ -1,15 +1,13 @@
 const Hero = () => {
   return (
     <article className="bg-hero">
-      <section className="grid grid-cols-2 px-[10vw] text-center text-dark-blue">
-        <div className="box-border h-[39.0625%] place-self-end py-[19.53125%]">
-          <h1 className="dragna">
-            LOREM
-            <br />
-            IPSUM
-          </h1>
-          <p>Consectetur Adipiscing Elit</p>
-        </div>
+      <section className="py-10 text-center text-light-blue sm:pb-20 md:py-8">
+        <h1 className="dragna py-2 text-center text-4xl md:py-4 md:text-6xl lg:text-7xl 2xl:text-9xl">
+          Lifestyle <span className="md:whitespace-pre">by Design</span>
+        </h1>
+        <p className="amenti-bold mx-[10%] text-center text-xl md:my-4 md:text-2xl 2xl:my-8 2xl:text-4xl">
+          Transform Body & Mind
+        </p>
       </section>
     </article>
   );

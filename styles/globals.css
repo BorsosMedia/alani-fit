@@ -79,28 +79,16 @@
     @apply fixed md:absolute left-0 top-0 flex w-full items-center justify-around bg-black/60 text-white;
   }
 
+  .bg-display {
+    @apply grid grid-cols-1 bg-cover bg-no-repeat md:grid-cols-2 md:px-0 md:pl-[10%];
+  }
+
   .bg-hero {
-    @apply h-0 bg-hero-bg-desktop bg-cover bg-no-repeat pb-[39.0625%];
+    @apply bg-display bg-hero-bg-mobile place-content-end md:place-content-center py-[50%] md:bg-hero-bg-desktop h-0 md:py-[19.53125%];
   }
 
-  .pink-rectangle {
-    @apply skew bg-dark-pink px-20;
-  }
-
-  .plan {
-    @apply px-8 py-2 cursor-pointer;
-  }
-
-  .selected-plan {
-    @apply bg-light-pink text-light-blue amenti-black;
-  }
-
-  .unselected-plan {
-    @apply bg-light-blue text-light-pink transition-all duration-300 ease-in-out hover:text-light-blue hover:bg-light-pink hover:amenti-black;
-  }
-
-  .blue-rectangle {
-    @apply skew bg-light-blue px-5;
+  .bg-bloodwork {
+    @apply bg-display bg-bloodwork-bg-desktop xl:h-0 xl:py-[20.546875%] place-content-center;
   }
 
   .skew {
@@ -108,16 +96,112 @@
   }
 
   .unskew {
-    @apply block skew-x-[20deg];
+    @apply inline-block skew-x-[20deg];
+  }
+
+  /* PLANS DISPLAY */
+
+  .plan-display {
+    @apply flex-col-center container mx-auto w-full py-8;
+  }
+
+  .plan-type-headline {
+    @apply dragna skew mx-[10%] w-[80%] py-2 text-center text-3xl md:py-4 md:text-5xl lg:text-6xl 2xl:text-8xl;
+  }
+
+  .plan-type-subheadline {
+    @apply amenti-light mx-[10%] my-4 text-center text-xl uppercase tracking-widest text-lighter-pink md:text-2xl 2xl:my-8 2xl:text-4xl;
+  }
+
+  .blue-bg_pink-text {
+    @apply bg-light-blue text-light-pink;
+  }
+
+  .pink-bg_white-text {
+    @apply bg-dark-pink text-white;
+  }
+
+  .coaching-cards-display {
+    @apply flex-col-center md:flex-row-center gap-4;
+  }
+
+  .cards-display {
+    @apply gap-4 py-8;
+  }
+
+  .cards-display-row {
+    @apply md:flex-row-center cards-display;
+  }
+
+  .cards-display-col {
+    @apply md:flex-col-center cards-display;
+  }
+
+  /* PLAN SELECTORS */
+
+  fieldset {
+    @apply md:flex-row-center grid grid-cols-2 gap-4 pb-8;
+  }
+
+  .plan {
+    @apply flex-col-center cursor-pointer px-4 py-2 text-xl lg:h-[48px] lg:w-[200px] lg:text-2xl 2xl:h-[72px] 2xl:w-[271px] 2xl:text-3xl;
+  }
+
+  .selected-plan {
+    @apply amenti-black plan bg-light-pink text-light-blue;
+  }
+
+  .unselected-plan {
+    @apply hover:selected-plan plan bg-light-blue text-light-pink transition-all duration-300 ease-in-out;
+  }
+
+  /* PLAN CARDS */
+
+  .gradient-border {
+    @apply absolute h-full w-full p-1;
   }
 
   .bg-coaching-card {
-    @apply w-[320px] h-[400px] bg-radial-gradient rounded-3xl relative;
+    @apply relative h-[440px] w-[320px] rounded-3xl md:h-[462px] md:w-[360px] 2xl:h-[707px] 2xl:w-[694px];
+  }
+
+  .bg-one-time-card {
+    @apply relative h-[440px] w-[320px] bg-gradient-to-b from-dark-pink to-light-blue md:h-[240px] md:w-[768px] 2xl:w-[1324px];
+  }
+
+  .bg-contest-prep-card {
+    @apply relative h-[440px] w-[320px] bg-gradient-to-b from-dark-pink to-light-blue 2xl:h-[628px] 2xl:w-[508px];
   }
 
   .coaching-card {
-    @apply flex flex-col items-center justify-between m-[5%] py-[5%] h-[90%] w-[90%] text-light-blue border border-white rounded-3xl absolute;
+    @apply absolute m-[5%] flex h-[90%] w-[90%] flex-col items-center justify-between rounded-3xl border border-white py-[5%] text-center;
   }
+
+  .one-time-card {
+    @apply flex h-full w-full flex-col items-center justify-around bg-lighter-pink text-center text-dark-pink md:flex-row;
+  }
+
+  .contest-prep-card {
+    @apply flex h-full w-full flex-col items-center justify-around text-center text-dark-pink;
+  }
+
+  .card-headline {
+    @apply dragna text-3xl md:text-5xl 2xl:text-6xl;
+  }
+
+  .card-subheadline {
+    @apply amenti-bold text-2xl uppercase tracking-widest 2xl:text-5xl;
+  }
+
+  .card-bullets {
+    @apply flex-col-center list-disc 2xl:text-2xl;
+  }
+
+  .card-price {
+    @apply amenti-bold text-5xl md:text-6xl 2xl:text-8xl;
+  }
+
+  /* END OF PLAN CARDS */
 
   .footer {
     @apply px-[10vw] flex-col-center w-full gap-8 bg-lighter-pink py-8 text-center text-light-blue;
