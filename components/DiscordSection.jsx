@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import WhiteButton from "./WhiteButton";
+import Button from "./Button";
 import discord from "../public/assets/discord.png";
 
 const DiscordSection = () => {
@@ -17,7 +17,7 @@ const DiscordSection = () => {
             eiusmod tempor incididunt ut labore et dolore magna.
           </p>
           <a href="#" target="_blank" rel="noopener noreferrer nofollow">
-            <WhiteButton text="Join Now" />
+            <Button text="Join Now" to="#" color="bg-white text-dark-pink" />
           </a>
         </section>
       </section>

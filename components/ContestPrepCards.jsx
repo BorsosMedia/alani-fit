@@ -1,4 +1,4 @@
-import PurchaseButton from "./PurchaseButton";
+import Button from "./Button";
 
 const ContestPrepCards = ({ plan, price, to }) => {
   return (
@@ -34,7 +34,7 @@ const ContestPrepCards = ({ plan, price, to }) => {
             )}
           </ul>
           <p className="card-price">${price}</p>
-          <PurchaseButton to={to} color="text-white bg-light-blue" />
+          <Button to={to} color="text-white bg-light-blue" />
         </div>
       </div>
     </div>

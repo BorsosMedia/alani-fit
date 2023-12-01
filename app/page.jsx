@@ -9,7 +9,6 @@ import Hero from "../components/Hero";
 import InquirySection from "../components/InquirySection";
 import InstagramWidget from "../components/InstagramWidget";
 import OneTimePlans from "../components/OneTimePlans";
-import Progress from "../components/Progress";
 import Subhero from "../components/Subhero";
 
 export default function Home() {
@@ -25,7 +24,6 @@ export default function Home() {
       <InquirySection />
       <Consultation />
       <About />
-      <Progress />
       <InstagramWidget />
       <Footer />
     </main>

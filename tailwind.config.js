@@ -21,8 +21,9 @@ module.exports = {
       backgroundImage: {
         "hero-bg-desktop": 'url("/assets/home.png")',
         "hero-bg-mobile": 'url("/assets/home-mobile.png")',
-        "inquiry-bg-desktop": 'url("/assets/inquiry-bg.png")',
         "bloodwork-bg-desktop": 'url("/assets/bloodwork.png")',
+        "bloodwork-bg-mobile": 'url("/assets/bloodwork-mobile.png")',
+        "inquiry-bg-desktop": 'url("/assets/inquiry-bg.png")',
         "pink-gradient":
           "radial-gradient(circle at 40% 60%, #ff61ad, #ff61ad, #ffcfea);",
         "blue-gradient":

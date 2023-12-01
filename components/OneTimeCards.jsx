@@ -1,4 +1,4 @@
-import PurchaseButton from "./PurchaseButton";
+import Button from "./Button";
 
 const OneTimeCards = ({ plan, bullets, to }) => {
   return (
@@ -16,7 +16,7 @@ const OneTimeCards = ({ plan, bullets, to }) => {
           </ul>
           <div>
             <p className="card-price pb-8 md:pb-4">$399</p>
-            <PurchaseButton to={to} />
+            <Button to={to} />
           </div>
         </div>
       </div>

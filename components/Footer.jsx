@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Image src={logo} alt="Logo" className="h-32 w-auto" />
-      <section className="flex-row-center w-full md:w-[60%]">
+      <section className="flex-row-center container mx-auto w-full">
         <div className="footer-separator" />
         <div className="flex-row-center min-w-fit">
           <a
@@ -45,8 +45,20 @@ const Footer = () => {
         <Link href="#" target="_blank" className="underline">
           Legal and Privacy Policy
         </Link>
-        <p>
-          Copyright © 2023 RNVNTU Coaching LLC - All Rights Reserved / Website
+        <p className="md:hidden">
+          Copyright © 2023 Alani X Fit LLC - All Rights Reserved
+          <br />
+          Website Developed and Designed by{" "}
+          <a
+            href="https://www.borsosmedia.com/"
+            target="_blank"
+            className="underline"
+          >
+            Borsos Media
+          </a>
+        </p>
+        <p className="hidden md:block">
+          Copyright © 2023 Alani X Fit LLC - All Rights Reserved / Website
           Developed and Designed by{" "}
           <a
             href="https://www.borsosmedia.com/"

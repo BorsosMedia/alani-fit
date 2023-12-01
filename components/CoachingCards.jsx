@@ -1,4 +1,4 @@
-import PurchaseButton from "./PurchaseButton";
+import Button from "./Button";
 
 const CoachingCards = ({ tier, plan, price, to, discount }) => {
   return (
@@ -40,7 +40,7 @@ const CoachingCards = ({ tier, plan, price, to, discount }) => {
             /{plan === "monthly" ? "month" : plan === "annual" ? "year" : plan}
           </span>
         </p>
-        <PurchaseButton
+        <Button
           to={to}
           color={
             tier === "bottom"

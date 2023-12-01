@@ -1,5 +1,3 @@
-import React from "react";
-
 const Subhero = () => {
   return (
     <article className="w-full bg-white py-2 text-center">

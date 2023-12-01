@@ -1,4 +1,4 @@
-import PurchaseButton from "./PurchaseButton";
+import Button from "./Button";
 
 const Bloodwork = () => {
   return (
@@ -15,7 +15,7 @@ const Bloodwork = () => {
           minim veniam.
         </p>
         <p className="amenti-bold pb-8 text-5xl xl:text-7xl">$199</p>
-        <PurchaseButton to="#" />
+        <Button to="#" />
       </section>
     </article>
   );

@@ -75,9 +75,17 @@
     @apply flex flex-row items-center justify-center gap-4;
   }
 
-  .navbar {
-    @apply fixed md:absolute left-0 top-0 flex w-full items-center justify-around bg-black/60 text-white;
+  /* SKEW AND UNSKEW */
+
+  .skew {
+    @apply inline-block -skew-x-[20deg];
   }
+
+  .unskew {
+    @apply inline-block skew-x-[20deg];
+  }
+
+  /* BACKGROUNDS */
 
   .bg-display {
     @apply grid grid-cols-1 bg-cover bg-no-repeat md:grid-cols-2 md:px-0 md:pl-[10%];
@@ -88,15 +96,7 @@
   }
 
   .bg-bloodwork {
-    @apply bg-display bg-bloodwork-bg-desktop xl:h-0 xl:py-[20.546875%] place-content-center;
-  }
-
-  .skew {
-    @apply inline-block -skew-x-[20deg];
-  }
-
-  .unskew {
-    @apply inline-block skew-x-[20deg];
+    @apply bg-display bg-bloodwork-bg-mobile py-[51.18694362017804%] md:py-4 sm:px-[10vw] md:bg-bloodwork-bg-desktop h-0 md:h-fit xl:h-0 xl:py-[20.546875%] place-content-center;
   }
 
   /* PLANS DISPLAY */
@@ -201,7 +201,7 @@
     @apply amenti-bold text-5xl md:text-6xl 2xl:text-8xl;
   }
 
-  /* END OF PLAN CARDS */
+  /* VARIOOOOOOOOS */
 
   .footer {
     @apply px-[10vw] flex-col-center w-full gap-8 bg-lighter-pink py-8 text-center text-light-blue;
@@ -225,5 +225,9 @@
 
   .about-icons {
     @apply h-8 w-auto;
+  }
+
+  .navbar {
+    @apply fixed md:absolute left-0 top-0 flex w-full items-center justify-around bg-black/60 text-white;
   }
 }
