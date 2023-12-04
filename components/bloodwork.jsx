@@ -14,7 +14,7 @@ const Bloodwork = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam.
         </p>
-        <p className="amenti-bold pb-8 text-5xl xl:text-7xl">$199</p>
+        <p className="amenti-bold pb-8 text-7xl">$199</p>
         <Button to="#" />
       </section>
     </article>

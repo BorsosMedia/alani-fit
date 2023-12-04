@@ -239,3 +239,13 @@
     @apply h-auto w-24 md:w-32 2xl:w-40;
   }
 }
+
+.slick-dots li button:before {
+  opacity: 1 !important;
+  color: #ffedf7 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #ff61ad !important;
+}
