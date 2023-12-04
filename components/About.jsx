@@ -63,6 +63,7 @@ const About = () => {
           </section>
         </section>
       </section>
+      <div className="h-3 w-full bg-separator" />
     </article>
   );
 };

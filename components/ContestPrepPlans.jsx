@@ -1,5 +1,5 @@
 import ContestPrepCards from "./ContestPrepCards";
-// import ContestPrepCardsSlider from "./ContestPrepCardsSlider";
+import ContestPrepCardsSlider from "./ContestPrepCardsSlider";
 
 const ContestPrepPlans = () => {
   return (
@@ -7,12 +7,12 @@ const ContestPrepPlans = () => {
       <h2 className="plan-type-headline blue-bg_pink-text">
         <span className="unskew">Contest Prep Plans</span>
       </h2>
-      <section className="cards-display-row">
+      <section className="cards-display-row hidden md:flex">
         <ContestPrepCards to="#" plan="monthly" price="299" />
         <ContestPrepCards to="#" plan="16 week" price="900" />
       </section>
-      <section className="md:hidden">
-        {/* <ContestPrepCardsSlider /> */}
+      <section className="w-[80%] py-8 md:hidden">
+        <ContestPrepCardsSlider />
       </section>
     </article>
   );

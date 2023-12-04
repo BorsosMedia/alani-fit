@@ -96,13 +96,13 @@
   }
 
   .bg-bloodwork {
-    @apply bg-display bg-bloodwork-bg-mobile py-[51.18694362017804%] md:py-4 sm:px-[10vw] md:bg-bloodwork-bg-desktop h-0 md:h-fit xl:h-0 xl:py-[20.546875%] place-content-center;
+    @apply bg-display bg-bloodwork-bg-mobile xs:py-[51.18694362017804%] md:py-4 px-[10vw] md:bg-bloodwork-bg-desktop xs:h-0 md:h-fit xl:h-0 xl:py-[20.546875%] place-content-center;
   }
 
   /* PLANS DISPLAY */
 
   .plan-display {
-    @apply flex-col-center container mx-auto w-full py-8;
+    @apply flex-col-center container mx-auto w-full pb-8;
   }
 
   .plan-type-headline {
@@ -166,11 +166,11 @@
   }
 
   .bg-one-time-card {
-    @apply relative h-[440px] w-[320px] bg-gradient-to-b from-dark-pink to-light-blue md:h-[240px] md:w-[768px] 2xl:w-[1324px];
+    @apply relative mx-auto h-[440px] w-full bg-gradient-to-b from-dark-pink to-light-blue xs:w-[320px] md:mx-0 md:h-[240px] md:w-[768px] 2xl:w-[1324px];
   }
 
   .bg-contest-prep-card {
-    @apply relative h-[440px] w-[320px] bg-gradient-to-b from-dark-pink to-light-blue 2xl:h-[628px] 2xl:w-[508px];
+    @apply relative mx-auto h-[440px] w-full bg-gradient-to-b from-dark-pink to-light-blue xs:w-[320px] md:mx-0 2xl:h-[628px] 2xl:w-[508px];
   }
 
   .coaching-card {
@@ -219,7 +219,7 @@
     @apply h-6 w-auto clickable;
   }
 
-  .slick-slide-img {
+  .slick-slide {
     @apply box-border px-2;
   }
 

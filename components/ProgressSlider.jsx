@@ -58,41 +58,41 @@ const ProgressSlider = () => {
       className="mx-[10%] w-[80%] max-w-[1080px] lg:mx-auto"
     >
       <div>
-        <Image src={testimonial1} alt="slide 1" className="slick-slide-img" />
+        <Image src={testimonial1} alt="slide 1" className="slick-slide" />
       </div>
 
       <div>
-        <Image src={testimonial2} alt="slide 2" className="slick-slide-img" />
+        <Image src={testimonial2} alt="slide 2" className="slick-slide" />
       </div>
       <div>
-        <Image src={testimonial3} alt="slide 3" className="slick-slide-img" />
+        <Image src={testimonial3} alt="slide 3" className="slick-slide" />
       </div>
       <div>
-        <Image src={testimonial4} alt="slide 4" className="slick-slide-img" />
+        <Image src={testimonial4} alt="slide 4" className="slick-slide" />
       </div>
       <div>
-        <Image src={testimonial5} alt="slide 5" className="slick-slide-img" />
+        <Image src={testimonial5} alt="slide 5" className="slick-slide" />
       </div>
       <div>
-        <Image src={testimonial6} alt="slide 6" className="slick-slide-img" />
+        <Image src={testimonial6} alt="slide 6" className="slick-slide" />
       </div>
       <div>
-        <Image src={testimonial7} alt="slide 7" className="slick-slide-img" />
+        <Image src={testimonial7} alt="slide 7" className="slick-slide" />
       </div>
       <div>
-        <Image src={testimonial8} alt="slide 8" className="slick-slide-img" />
+        <Image src={testimonial8} alt="slide 8" className="slick-slide" />
       </div>
       <div>
-        <Image src={testimonial9} alt="slide 9" className="slick-slide-img" />
+        <Image src={testimonial9} alt="slide 9" className="slick-slide" />
       </div>
       <div>
-        <Image src={testimonial10} alt="slide 10" className="slick-slide-img" />
+        <Image src={testimonial10} alt="slide 10" className="slick-slide" />
       </div>
       <div>
-        <Image src={testimonial11} alt="slide 11" className="slick-slide-img" />
+        <Image src={testimonial11} alt="slide 11" className="slick-slide" />
       </div>
       <div>
-        <Image src={testimonial12} alt="slide 12" className="slick-slide-img" />
+        <Image src={testimonial12} alt="slide 12" className="slick-slide" />
       </div>
     </Slider>
   );

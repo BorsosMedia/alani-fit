@@ -1,4 +1,5 @@
 import OneTimeCards from "./OneTimeCards";
+import OneTimeCardsSlider from "./OneTimeCardsSlider";
 
 const OneTimePlans = () => {
   return (
@@ -6,7 +7,7 @@ const OneTimePlans = () => {
       <h2 className="plan-type-headline blue-bg_pink-text">
         <span className="unskew">One Time Plans</span>
       </h2>
-      <section className="cards-display-col">
+      <section className="cards-display-col hidden md:flex">
         <OneTimeCards
           to="#"
           plan="Fit & Lean"
@@ -37,6 +38,9 @@ const OneTimePlans = () => {
             "Metabolic Conditioning",
           ]}
         />
+      </section>
+      <section className="w-[80%] py-8 md:hidden">
+        <OneTimeCardsSlider />
       </section>
     </article>
   );

@@ -2,7 +2,7 @@ import PlanSelector from "./PlanSelector";
 
 const CoachingPlans = () => {
   return (
-    <article id="coaching" className="plan-display">
+    <article id="coaching" className="plan-display pt-8">
       <h2 className="plan-type-headline pink-bg_white-text">
         <span className="unskew">Coaching Plans</span>
       </h2>

@@ -28,6 +28,11 @@ module.exports = {
           "radial-gradient(circle at 40% 60%, #ff61ad, #ff61ad, #ffcfea);",
         "blue-gradient":
           "radial-gradient(circle at 50% 50%, #fff, #f5f5f5, #1E4878);",
+        separator:
+          "linear-gradient(90deg, #FF61AD 0%, rgba(255, 97, 173, 0.18) 51.04%, #FF61AD 100%);",
+      },
+      screens: {
+        xs: "420px",
       },
     },
   },

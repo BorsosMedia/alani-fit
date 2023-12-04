@@ -2,7 +2,7 @@ import Button from "./Button";
 
 const Consultation = () => {
   return (
-    <article className="flex-col-center w-full gap-4 bg-light-blue px-[10vw] py-4 text-center md:py-8 xl:py-16">
+    <article className="flex-col-center w-full gap-2 bg-light-blue px-[10vw] py-4 text-center md:py-8 ">
       <h2 className="dragna text-3xl text-dark-pink md:text-4xl lg:text-5xl 2xl:text-7xl">
         Get a Free 15 Minute Consultation Call
       </h2>
@@ -10,7 +10,7 @@ const Consultation = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore.
       </p>
-      <a href="#" className="pt-2 md:pt-4 xl:pt-8">
+      <a href="#" className="pt-2 md:pt-4">
         <Button text="Go to calendar" to="#" color="bg-white text-dark-pink" />
       </a>
     </article>
