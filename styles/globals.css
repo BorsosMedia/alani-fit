@@ -201,6 +201,24 @@
     @apply amenti-bold text-5xl md:text-6xl 2xl:text-8xl;
   }
 
+  /* ABOUT */
+
+  .bg-about {
+    @apply relative h-[320px] w-auto pt-4 sm:h-[494px] lg:h-[768px] 2xl:h-[1048px];
+  }
+
+  .about-separator {
+    @apply h-3 w-full bg-about-separator hidden md:block;
+  }
+
+  .about-card {
+    @apply;
+  }
+
+  .about-icons {
+    @apply h-8 w-auto;
+  }
+
   /* VARIOOOOOOOOS */
 
   .footer {
@@ -221,10 +239,6 @@
 
   .slick-slide {
     @apply box-border px-2;
-  }
-
-  .about-icons {
-    @apply h-8 w-auto;
   }
 
   .navbar {

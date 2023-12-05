@@ -7,8 +7,8 @@ const Consultation = () => {
         Get a Free 15 Minute Consultation Call
       </h2>
       <p className="text-lg text-white md:text-xl 2xl:text-2xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore.
+        I&apos;m here to help you understand the process. Book a 15 minute
+        consultation for free and let&apos;s talk about it.
       </p>
       <a href="#" className="pt-2 md:pt-4">
         <Button text="Go to calendar" to="#" color="bg-white text-dark-pink" />

@@ -20,6 +20,7 @@ import testimonial9 from "../public/assets/testimonials/9.png";
 
 const ProgressSlider = () => {
   const settings = {
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
