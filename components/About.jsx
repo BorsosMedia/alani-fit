@@ -25,8 +25,8 @@ const About = () => {
               className="hidden h-[480px] w-auto md:block 2xl:h-[620px]"
             />
             <div className="relative -left-16 h-[450px] w-[320px] rounded-3xl bg-blue-gradient text-light-blue sm:w-[441px] xl:-left-20 2xl:h-[592px] 2xl:w-[581px]">
-              <div className="absolute m-[5%] flex h-[90%] w-[90%] flex-col items-center justify-between text-lg md:text-xl 2xl:m-[10%] 2xl:h-[80%] 2xl:w-[80%] 2xl:text-2xl">
-                <h3 className="amenti-bold pb-4 text-2xl uppercase 2xl:text-5xl">
+              <div className="absolute m-[5%] flex h-[90%] w-[90%] flex-col items-center justify-between lg:text-lg 2xl:m-[10%] 2xl:h-[80%] 2xl:w-[80%] 2xl:text-xl">
+                <h3 className="amenti-bold pb-4 text-lg uppercase lg:text-xl 2xl:text-4xl">
                   Your Fitness Partner
                 </h3>
                 <p className="pb-4">
@@ -45,7 +45,7 @@ const About = () => {
               </div>
             </div>
           </section>
-          <section className="amenti-bold mx-[20%] flex w-[60%] -skew-x-[20deg] flex-row items-center justify-around bg-dark-pink px-4 py-2 text-lg uppercase md:text-xl 2xl:text-2xl">
+          <section className="amenti-bold mx-[10%] flex w-[80%] -skew-x-[20deg] flex-row items-center justify-around bg-dark-pink px-4 py-2 text-sm uppercase md:text-base xl:text-xl 2xl:text-2xl">
             <div className="flex-row-center skew-x-[20deg]">
               <Image src={runner} alt="Runner" className="about-icons" />
               <span>Personalized Training</span>

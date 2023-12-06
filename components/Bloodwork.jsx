@@ -4,7 +4,7 @@ const Bloodwork = () => {
   return (
     <article className="bg-bloodwork">
       <section className="py-8 text-center text-light-blue md:text-left">
-        <h2 className="dragna text-3xl md:text-5xl 2xl:text-7xl">
+        <h2 className="dragna text-3xl sm:text-5xl 2xl:text-7xl">
           Understanding How
           <br />
           <span className="text-dark-pink">Your Body Works</span>

@@ -13,7 +13,7 @@ const PlanSelector = () => {
   };
 
   return (
-    <section className="plan-display">
+    <section className="plan-display z-10">
       <fieldset>
         {planTypes.map((planType, index) => (
           <div key={index}>
