@@ -5,6 +5,7 @@ import CoachingPlans from "../components/CoachingPlans";
 import Consultation from "../components/Consultation";
 import ContestPrepPlans from "../components/ContestPrepPlans";
 import Footer from "../components/Footer";
+// import Glutes from "../components/Glutes";
 import Hero from "../components/Hero";
 import InquirySection from "../components/InquirySection";
 import InstagramWidget from "../components/InstagramWidget";
@@ -20,6 +21,7 @@ export default function Home() {
       <CoachingPlans />
       <OneTimePlans />
       <ContestPrepPlans />
+      {/* <Glutes /> */}
       <Bloodwork />
       <InquirySection />
       <Consultation />

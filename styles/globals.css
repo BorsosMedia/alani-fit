@@ -204,11 +204,11 @@
   /* ABOUT */
 
   .bg-about {
-    @apply relative h-[320px] w-auto pt-4 sm:h-[494px] lg:h-[768px] 2xl:h-[1048px];
+    @apply relative h-[320px] w-auto pt-4 sm:h-[350px] lg:h-[656px] 2xl:h-[820px];
   }
 
   .about-separator {
-    @apply h-3 w-full bg-about-separator hidden md:block;
+    @apply h-3 w-full bg-about-separator hidden md:block mt-8;
   }
 
   .about-card {
