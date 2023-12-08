@@ -20,10 +20,18 @@ const ContestPrepCardsSlider = () => {
   return (
     <Slider {...settings}>
       <div>
-        <ContestPrepCards to="#" plan="monthly" price="299" />
+        <ContestPrepCards
+          to="https://training.alanixfitcoaching.com/cp-mp"
+          plan="monthly"
+          price="299"
+        />
       </div>
       <div>
-        <ContestPrepCards to="#" plan="16 week" price="900" />
+        <ContestPrepCards
+          to="https://training.alanixfitcoaching.com/cp-16wp"
+          plan="16 week"
+          price="900"
+        />
       </div>
     </Slider>
   );

@@ -9,7 +9,7 @@ const OneTimePlans = () => {
       </h2>
       <section className="cards-display-col hidden md:flex">
         <OneTimeCards
-          to="#"
+          to="https://training.alanixfitcoaching.com/otc-fal"
           plan="Fit & Lean"
           bullets={[
             "Personalized Nutrition",
@@ -19,7 +19,7 @@ const OneTimePlans = () => {
           ]}
         />
         <OneTimeCards
-          to="#"
+          to="https://training.alanixfitcoaching.com/otc-wl"
           plan="Weight Loss"
           bullets={[
             "Customized Meal Plan",
@@ -29,7 +29,7 @@ const OneTimePlans = () => {
           ]}
         />
         <OneTimeCards
-          to="#"
+          to="https://training.alanixfitcoaching.com/otc-br"
           plan="Body Revive"
           bullets={[
             "Strength and Cardio Training",

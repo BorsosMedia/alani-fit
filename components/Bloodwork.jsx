@@ -16,7 +16,7 @@ const Bloodwork = () => {
           improved results.
         </p>
         <p className="amenti-bold pb-8 text-7xl">$199</p>
-        <Button to="#" />
+        <Button to="https://training.alanixfitcoaching.com/bloodwork-pay" />
       </section>
     </article>
   );
