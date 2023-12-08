@@ -42,7 +42,11 @@ const Footer = () => {
         <div className="footer-separator" />
       </section>
       <section className="flex-col-center gap-4">
-        <Link href="#" target="_blank" className="underline">
+        <Link
+          href="https://training.alanixfitcoaching.com/legal-and-privacy-policy"
+          target="_blank"
+          className="underline"
+        >
           Legal and Privacy Policy
         </Link>
         <p className="md:hidden">
