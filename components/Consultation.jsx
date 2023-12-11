@@ -11,7 +11,11 @@ const Consultation = () => {
         consultation for free and let&apos;s talk about it.
       </p>
       <a href="#" className="pt-2 md:pt-4">
-        <Button text="Go to calendar" to="#" color="bg-white text-dark-pink" />
+        <Button
+          text="Go to calendar"
+          to="https://training.alanixfitcoaching.com/calendar"
+          color="bg-white text-dark-pink"
+        />
       </a>
     </article>
   );
