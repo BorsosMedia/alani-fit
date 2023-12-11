@@ -162,7 +162,7 @@
   }
 
   .bg-coaching-card {
-    @apply relative h-[440px] w-[320px] rounded-3xl md:h-[462px] md:w-[360px] 2xl:h-[707px] 2xl:w-[694px];
+    @apply relative h-[440px] w-[320px] rounded-3xl md:h-[462px] md:w-[364px] 2xl:h-[707px] 2xl:w-[694px];
   }
 
   .bg-one-time-card {
@@ -198,7 +198,11 @@
   }
 
   .card-price {
-    @apply amenti-bold text-5xl md:text-6xl 2xl:text-8xl;
+    @apply amenti-bold text-5xl md:text-6xl 2xl:text-8xl flex flex-row justify-center gap-1;
+  }
+
+  .card-discount {
+    @apply flex-col-center;
   }
 
   /* ABOUT */

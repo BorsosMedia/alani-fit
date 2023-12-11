@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-const CoachingCards = ({ tier, plan, price, to, discount }) => {
+const CoachingCards = ({ tier, plan, price, to, discount, before }) => {
   return (
     <div
       className={`bg-coaching-card ${
@@ -34,11 +34,43 @@ const CoachingCards = ({ tier, plan, price, to, discount }) => {
             </>
           )}
         </ul>
-        <p className="card-price">
+        <p
+          className={`card-price ${
+            plan === "monthly" ? "items-baseline" : "items-center"
+          }`}
+        >
           ${price}
-          <span className="text-[0.3em] uppercase">
-            /{plan === "monthly" ? "month" : plan === "annual" ? "year" : plan}
-          </span>
+          {plan !== "monthly" ? (
+            <span className="flex flex-col items-start text-[0.3em] uppercase">
+              <div
+                className={`skew mx-3 mb-1 ${
+                  tier === "bottom"
+                    ? "bg-dark-pink text-white"
+                    : "bg-light-blue text-light-pink"
+                }`}
+              >
+                <div className="flex-col-center px-2">
+                  <p className="dragna unskew">{discount}% off</p>
+                  <p className="unskew text-[0.5em] uppercase line-through">
+                    Before ${before}
+                  </p>
+                </div>
+              </div>
+              <div>
+                /
+                {plan === "monthly"
+                  ? "month"
+                  : plan === "annual"
+                    ? "year"
+                    : plan}
+              </div>
+            </span>
+          ) : (
+            <span className="text-[0.3em] uppercase">
+              /
+              {plan === "monthly" ? "month" : plan === "annual" ? "year" : plan}
+            </span>
+          )}
         </p>
         <Button
           to={to}
