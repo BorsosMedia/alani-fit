@@ -1,6 +1,14 @@
 import Button from "./Button";
 
-const CoachingCards = ({ tier, plan, price, to, discount, before }) => {
+const CoachingCards = ({
+  tier,
+  plan,
+  price,
+  decimal,
+  to,
+  discount,
+  before,
+}) => {
   return (
     <div
       className={`bg-coaching-card ${
@@ -39,7 +47,10 @@ const CoachingCards = ({ tier, plan, price, to, discount, before }) => {
             plan === "monthly" ? "items-baseline" : "items-center"
           }`}
         >
-          ${price}
+          <span>
+            ${price}
+            {decimal && <span className="text-[0.6em]">.{decimal}</span>}
+          </span>
           {plan !== "monthly" ? (
             <span className="flex flex-col items-start text-[0.3em] uppercase">
               <div
