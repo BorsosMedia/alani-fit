@@ -8,17 +8,17 @@ import dumbbell1 from "../public/assets/dumbbell.png";
 const CoachingPlans = () => {
   return (
     <article id="coaching" className="plan-display relative pt-8">
-      <section className="absolute top-0 flex h-[50vh] w-[100vw] flex-col justify-between sm:h-[75vh] md:h-[100vh]">
+      <section className="absolute top-0 flex h-[50vh] w-[100vw] flex-col justify-between sm:h-[75vh] md:h-[100%]">
         <div className="flex justify-between">
           <Image
             src={coachingBg}
             alt="background"
-            className="absolute left-[-10%] h-[30vw] w-auto sm:top-[-5vh]"
+            className="absolute -left-10 h-[30vw] w-auto sm:top-[-5vh]"
           />
           <Image
             src={coachingBg}
             alt="background"
-            className="absolute right-[-10%] h-[30vw] w-auto sm:top-[-5vh]"
+            className="absolute -right-20 h-[30vw] w-auto sm:top-[-5vh]"
           />
         </div>
         <div className="flex justify-between">
