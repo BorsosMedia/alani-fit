@@ -18,9 +18,9 @@ const InquirySection = () => {
         />
         <section className="col-span-2 place-self-start self-center">
           <h2 className="dragna mb-4 text-5xl">
-            Unlock your
+            Reinvent Your
             <br />
-            full potential
+            Fitness Journey
           </h2>
           <p>
             There&apos;s power in knowledge. Ask away and I&apos;ll do my best
