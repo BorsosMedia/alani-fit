@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <article className="bg-hero">
-      <section className="py-10 text-center text-light-blue sm:pb-20 md:py-8">
+      <section className="py-10 text-center text-light-blue sm:pb-20 md:mt-20 md:py-8">
         <h1 className="dragna py-2 text-center text-4xl md:py-4 md:text-6xl lg:text-7xl 2xl:text-9xl">
           Lifestyle <span className="md:whitespace-pre">by Design</span>
         </h1>
