@@ -24,7 +24,7 @@ const BurgerMenu = () => {
     <NextUIProvider>
       <Navbar
         onMenuOpenChange={setIsMenuOpen}
-        className="navbar"
+        className="navbar lg:px-[10%]"
         maxWidth="full"
       >
         <NavbarContent

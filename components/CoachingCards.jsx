@@ -54,7 +54,7 @@ const CoachingCards = ({
           {plan !== "monthly" ? (
             <span className="flex flex-col items-start text-[0.3em] uppercase">
               <div
-                className={`skew mx-3 mb-1 ${
+                className={`skew mx-3 mb-1 py-1 ${
                   tier === "bottom"
                     ? "bg-dark-pink text-white"
                     : "bg-light-blue text-light-pink"
