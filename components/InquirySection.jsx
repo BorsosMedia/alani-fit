@@ -10,13 +10,13 @@ const InquirySection = () => {
       className="grid grid-cols-1 place-content-center bg-inquiry-bg-mobile bg-cover bg-no-repeat md:bg-inquiry-bg-desktop 2xl:h-0 2xl:py-[28.30769230769231%]"
       suppressHydrationWarning
     >
-      <div className="mx-[10%] grid w-[80%] grid-cols-1 py-8 text-center text-white md:grid-cols-5">
+      <div className="mx-[10%] grid w-[80%] grid-cols-1 py-8 text-center text-white md:grid-cols-4">
         <Image
           src={alani}
           alt="Alani"
-          className="col-span-2 hidden place-self-center p-4 md:block"
+          className="col-span-2 hidden place-self-end self-center p-4 md:block"
         />
-        <section className="col-span-3 place-self-center">
+        <section className="col-span-2 place-self-start self-center">
           <h2 className="dragna mb-4 text-5xl">
             Unlock your
             <br />
