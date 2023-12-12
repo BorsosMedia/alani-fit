@@ -13,7 +13,7 @@ const Consultation = () => {
       <a href="#" className="pt-2 md:pt-4">
         <Button
           text="Go to calendar"
-          to="https://training.alanixfitcoaching.com/calendar"
+          to="https://training.alanixfitcoaching.com/calendar-sales"
           color="bg-white text-dark-pink"
         />
       </a>
