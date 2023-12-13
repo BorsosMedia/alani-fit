@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 
 export const metadata = {
-  title: "Alani Fit",
+  title: "Alani X Fit",
   description:
     "Elevate your strength and brand with Alani X Fit, a Florida-based bikini bodybuilder and strategic brand expert. Uncover fitness insights, personalized regimens, and branding tips for a powerful physique and professional success. Join a community driven by passion and excellence. Your journey to a stronger, more empowered you begins now.",
 };
