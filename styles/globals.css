@@ -267,3 +267,8 @@
   opacity: 1 !important;
   color: #ff61ad !important;
 }
+
+.slick-arrow:before {
+  background: transparent !important;
+  color: #ffcfea !important;
+}
