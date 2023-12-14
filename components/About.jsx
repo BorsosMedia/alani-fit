@@ -32,8 +32,14 @@ const About = () => {
         />
       </section>
 
-      <h2 className="dragna relative z-10 pb-4 text-5xl 2xl:text-7xl">
-        About me <span className="text-dark-pink">Alani Long</span>
+      <h2 className="dragna relative z-10 pb-4 text-3xl md:text-5xl 2xl:text-7xl">
+        <span className="hidden md:inline">
+          About me <span className="text-dark-pink">Alani Long</span>
+        </span>
+        <span className="md:hidden">
+          About me <br />
+          <span className="text-dark-pink">Alani Long</span>
+        </span>
       </h2>
       <section className="flex-row-center">
         <Image
