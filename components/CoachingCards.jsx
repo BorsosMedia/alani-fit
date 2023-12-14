@@ -44,7 +44,7 @@ const CoachingCards = ({
         </ul>
         <p
           className={`card-price ${
-            plan === "monthly" ? "items-baseline" : "items-center"
+            plan === "monthly" ? "items-baseline" : "items-end"
           }`}
         >
           <span>
@@ -52,7 +52,7 @@ const CoachingCards = ({
             {decimal && <span className="text-[0.6em]">.{decimal}</span>}
           </span>
           {plan !== "monthly" ? (
-            <span className="flex flex-col items-start text-[0.3em] uppercase">
+            <span className="relative bottom-1 flex flex-col items-start text-[0.3em] uppercase md:bottom-2 2xl:bottom-3">
               <div
                 className={`skew mx-3 mb-1 py-2 ${
                   tier === "bottom"
