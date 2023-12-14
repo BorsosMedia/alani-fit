@@ -110,7 +110,7 @@
   }
 
   .plan-type-subheadline {
-    @apply amenti-light mx-[10%] my-4 text-center text-xl uppercase tracking-widest text-lighter-pink md:text-2xl 2xl:my-8 2xl:text-4xl;
+    @apply amenti-light mx-[10%] my-4 text-center text-[0.7em] uppercase tracking-widest text-lighter-pink md:text-xl 2xl:my-8 2xl:text-2xl;
   }
 
   .blue-bg_pink-text {
