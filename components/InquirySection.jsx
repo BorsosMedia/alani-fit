@@ -17,7 +17,7 @@ const InquirySection = () => {
           className="col-span-2 hidden place-self-end self-center p-4 md:block"
         />
         <section className="col-span-2 place-self-start self-center">
-          <h2 className="dragna mb-4 text-5xl">
+          <h2 className="dragna mb-4 text-3xl lg:text-5xl">
             Reinvent Your
             <br />
             Fitness Journey
