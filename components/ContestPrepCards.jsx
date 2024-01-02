@@ -21,7 +21,13 @@ const ContestPrepCards = ({ plan, price, to }) => {
             <li>Weekly Check-Ins</li>
             <li>Posing Sessions</li>
           </ul>
-          <p className="card-price">${price}</p>
+          {/* <p className="card-price">${price}</p> */}
+          <div className="flex flex-row items-end gap-2">
+            <p className="card-price">${price}</p>
+            <div className="skew on-sale-flag mx-3 mb-1 p-2 text-white">
+              <p className="dragna unskew">on sale</p>
+            </div>
+          </div>
           <Button to={to} color="text-white bg-light-blue" />
         </div>
       </div>

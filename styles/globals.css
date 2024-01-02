@@ -258,6 +258,26 @@
   }
 }
 
+.on-sale-flag {
+  animation: gradient 5s ease infinite;
+  -webkit-animation: gradient 5s ease infinite;
+  -moz-animation: gradient 5s ease infinite;
+  background: linear-gradient(to bottom, #ff61ad, #1e4878);
+  background-size: auto 300%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
 .slick-dots li button:before {
   opacity: 1 !important;
   color: #ffedf7 !important;

@@ -35,7 +35,7 @@ const CoachingPlans = () => {
         </div>
       </section>
       <h2 className="plan-type-headline pink-bg_white-text">
-        <span className="unskew">Coaching Plans</span>
+        <span className="unskew">Full Time Coaching Plans</span>
       </h2>
       <h3 className="plan-type-subheadline">
         I&apos;m here to inspire your fitness journey.

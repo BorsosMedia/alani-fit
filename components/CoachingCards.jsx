@@ -21,7 +21,8 @@ const CoachingCards = ({
         }`}
       >
         <div>
-          <h4 className="card-headline">{tier} Tier</h4>
+          {/* <h4 className="card-headline">{tier} Tier</h4> */}
+          <h4 className="card-headline">{tier === "upper" ? "1-on-1" : ""}</h4>
           <h5 className="card-subheadline">Coaching Plan</h5>
         </div>
         <ul className="card-bullets">
@@ -43,45 +44,44 @@ const CoachingCards = ({
           )}
         </ul>
         <p
-          className={`card-price ${
-            plan === "monthly" ? "items-baseline" : "items-end"
-          }`}
+          // className={`card-price
+          // ${
+          //   plan === "monthly" ? "items-baseline" : "items-end"
+          // }
+          // `}
+          className="card-price items-end"
         >
           <span>
             ${price}
             {decimal && <span className="text-[0.6em]">.{decimal}</span>}
           </span>
-          {plan !== "monthly" ? (
-            <span className="relative bottom-1 flex flex-col items-start text-[0.3em] uppercase md:bottom-2 2xl:bottom-3">
-              <div
-                className={`skew mx-3 mb-1 py-2 ${
-                  tier === "bottom"
-                    ? "bg-dark-pink text-white"
-                    : "bg-light-blue text-light-pink"
-                }`}
-              >
-                <div className="flex-col-center px-2">
-                  <p className="dragna unskew">{discount}% off</p>
-                  <p className="unskew text-[0.5em] uppercase line-through">
-                    Before ${before}
-                  </p>
-                </div>
+          {/* {plan !== "monthly" ? ( */}
+          <span className="relative bottom-1 flex flex-col items-start text-[0.3em] uppercase md:bottom-2 2xl:bottom-3">
+            <div
+              className={`skew mx-3 mb-1 py-2 ${
+                tier === "bottom"
+                  ? "bg-dark-pink text-white"
+                  : "bg-light-blue text-light-pink"
+              }`}
+            >
+              <div className="flex-col-center px-2">
+                <p className="dragna unskew">{discount}% off</p>
+                <p className="unskew text-[0.5em] uppercase line-through">
+                  Before ${before}
+                </p>
               </div>
-              <div>
-                /
-                {plan === "monthly"
-                  ? "month"
-                  : plan === "annual"
-                    ? "year"
-                    : plan}
-              </div>
-            </span>
-          ) : (
+            </div>
+            <div>
+              /
+              {plan === "monthly" ? "month" : plan === "annual" ? "year" : plan}
+            </div>
+          </span>
+          {/* ) : (
             <span className="text-[0.3em] uppercase">
               /
               {plan === "monthly" ? "month" : plan === "annual" ? "year" : plan}
             </span>
-          )}
+          )} */}
         </p>
         <Button
           to={to}
