@@ -14,24 +14,12 @@ const ContestPrepCards = ({ plan, price, to }) => {
             <h5 className="card-subheadline">Contest Prep</h5>
           </div>
           <ul className="card-bullets text-light-blue">
-            {plan === "monthly" ? (
-              <>
-                <li>Email Contact</li>
-                <li>Personalized Training</li>
-                <li>Nutrition Plans</li>
-                <li>Bi-weekly Check-Ins</li>
-                <li>Posing Sessions</li>
-              </>
-            ) : (
-              <>
-                <li>SMS & Email Contact</li>
-                <li>FaceTime Consultation</li>
-                <li>Personalized Training</li>
-                <li>Nutrition Plans</li>
-                <li>Weekly Check-Ins</li>
-                <li>Posing Sessions</li>
-              </>
-            )}
+            <li>SMS & Email Contact</li>
+            <li>FaceTime Consultation</li>
+            <li>Personalized Training</li>
+            <li>Nutrition Plans</li>
+            <li>Weekly Check-Ins</li>
+            <li>Posing Sessions</li>
           </ul>
           <p className="card-price">${price}</p>
           <Button to={to} color="text-white bg-light-blue" />
