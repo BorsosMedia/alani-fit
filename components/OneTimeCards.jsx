@@ -10,6 +10,7 @@ const OneTimeCards = ({ plan, bullets, to }) => {
             <h5 className="card-subheadline">3 Month Plan</h5>
           </div>
           <ul className="card-bullets text-light-blue">
+            <li>Access to Training App</li>
             {bullets.map((bullet, index) => (
               <li key={index}>{bullet}</li>
             ))}
