@@ -50,7 +50,8 @@ const Footer = () => {
           Legal and Privacy Policy
         </Link>
         <p className="md:hidden">
-          Copyright © 2023 Alani X Fit LLC - All Rights Reserved
+          Copyright © {new Date().getFullYear()} Alani X Fit LLC - All Rights
+          Reserved
           <br />
           Website Developed and Designed by{" "}
           <a
@@ -62,8 +63,8 @@ const Footer = () => {
           </a>
         </p>
         <p className="hidden md:block">
-          Copyright © 2023 Alani X Fit LLC - All Rights Reserved / Website
-          Developed and Designed by{" "}
+          Copyright © {new Date().getFullYear()} Alani X Fit LLC - All Rights
+          Reserved / Website Developed and Designed by{" "}
           <a
             href="https://www.borsosmedia.com/"
             target="_blank"
