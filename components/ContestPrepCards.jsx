@@ -14,7 +14,7 @@ const ContestPrepCards = ({ plan, price, to }) => {
             <h5 className="card-subheadline">Contest Prep</h5>
           </div>
           <ul className="card-bullets text-light-blue">
-            <li>SMS & Email Contact</li>
+            <li>Access to Training App</li>
             <li>FaceTime Consultation</li>
             <li>Personalized Training</li>
             <li>Nutrition Plans</li>

@@ -27,14 +27,14 @@ const CoachingCards = ({
         <ul className="card-bullets">
           {tier === "bottom" ? (
             <>
-              <li>Email Contact</li>
+              <li>Access to Training App</li>
               <li>Personalized Training</li>
               <li>Nutrition Plans</li>
               <li>Bi-weekly Check-Ins</li>
             </>
           ) : (
             <>
-              <li>SMS & Email Contact</li>
+              <li>Access to Training App</li>
               <li>FaceTime Consultation</li>
               <li>Personalized Training</li>
               <li>Nutrition Plans</li>
