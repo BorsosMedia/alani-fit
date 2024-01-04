@@ -4,11 +4,11 @@ import BurgerMenu from "../components/BurgerMenu";
 import CoachingPlans from "../components/CoachingPlans";
 import Consultation from "../components/Consultation";
 import ContestPrepPlans from "../components/ContestPrepPlans";
-import Footer from "../components/Footer";
 // import Glutes from "../components/Glutes";
 import Hero from "../components/Hero";
 import InquirySection from "../components/InquirySection";
 import InstagramWidget from "../components/InstagramWidget";
+import NewYearsSaleModal from "../components/NewYearsSaleModal";
 import OneTimePlans from "../components/OneTimePlans";
 import Subhero from "../components/Subhero";
 
@@ -27,7 +27,7 @@ export default function Home() {
       <Consultation />
       <About />
       <InstagramWidget />
-      <Footer />
+      <NewYearsSaleModal />
     </main>
   );
 }

@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import Footer from "../components/Footer";
+import affirm from "../lib/affirm";
 
 export const metadata = {
   title: "Alani X Fit",
@@ -11,6 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
+        <Footer />
         <script async src="https://link.msgsndr.com/js/form_embed.js" />
         <script
           async
@@ -18,6 +21,7 @@ export default function RootLayout({ children }) {
           data-use-service-core
           defer
         />
+        <script async src={affirm} />
       </body>
     </html>
   );
