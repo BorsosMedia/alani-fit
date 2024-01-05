@@ -15,11 +15,14 @@ const NewYearsSaleModal = () => {
 
   return (
     <Modal
-      hideCloseButton={true}
       isDismissable={true}
       onOpenChange={onOpenChange}
       defaultOpen={true}
       className="h-[75%] min-w-fit bg-transparent shadow-none"
+      classNames={{
+        closeButton:
+          "text-white hover:bg-dark-pink hover:scale-110 transition-all ease-in-out duration-300 -translate-x-2",
+      }}
     >
       <ModalContent className="pyro">
         {() => (
